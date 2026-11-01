@@ -58,7 +58,12 @@
                         </div>
 
                         <form action="https://script.google.com/macros/s/AKfycbxqdfhnN4g0ItsgB_wlwFYFjbHD1vvKo3DIw8BNEvz2aRio8RkVCN853geg7aKsc836Cg/exec"
-                            method="POST">
+                            method="POST"
+                            target="hidden_iframe"
+                          onsubmit="setTimeout(() => {
+                              window.location.href =
+                              'https://harshag2325.github.io/Port2/success.html';
+                          }, 1000);">
 
                             <div class="mb-3">
                                 <label for="name" class="form-label fw-semibold">
