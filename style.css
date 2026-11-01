@@ -1,0 +1,74 @@
+
+/* Experience section */
+.experience-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    border-left: 5px solid #0d6efd !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card hover effect */
+.experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.10) !important;
+}
+
+/* Company images */
+.company-logo {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    padding: 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 15px;
+    background-color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.company-logo:hover {
+    transform: scale(1.05);
+}
+
+/* Experience date badge */
+.experience-date {
+    display: inline-block;
+    background-color: #f1f5f9;
+    color: #475569;
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+/* Description list */
+.experience-list {
+    padding-left: 20px;
+    color: #555555;
+    line-height: 1.8;
+}
+
+.experience-list li {
+    margin-bottom: 5px;
+}
+
+/* Mobile responsive */
+@media (max-width: 767px) {
+    .experience-card .card-body {
+        padding: 20px !important;
+    }
+
+    .company-logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .experience-date {
+        white-space: normal;
+        width: fit-content;
+    }
+
+    .experience-card h4 {
+        font-size: 1.2rem;
+    }
+}
